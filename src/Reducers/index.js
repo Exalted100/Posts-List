@@ -2,7 +2,7 @@ import { combineReducers } from "redux";
 
 const postsReducer = (posts=[{title: "How to Dance", author: "Someone", minutes: "12"},
 {title: "How to Play the Flute", author: "Macklemore", minutes: "3"},
-{title: "The Art of Wooing Women", author: "Big Daddy", minutes: "20"}], action) => {
+{title: "The Art of Coding", author: "John Doe", minutes: "20"}], action) => {
     switch (action.type) {
         case "CREATE_POST":
             return [...posts, action.payload]
